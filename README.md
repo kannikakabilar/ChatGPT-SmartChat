@@ -5,6 +5,18 @@ Implementation of ChatGPT3: SmartChat using OpenAI's API. Information is sent an
 - Elegant User Interface that enhances the ChatGPT app
 - server.js can be modified to chat with any of OpenAI's trained models with a wide range of frequencies
 
+![Quote](https://github.com/kannikakabilar/ChatGPT3-SmartChat/blob/main/screenshots/Screen%20Shot%202023-02-08%20at%2012.06.10%20PM.png)
+<p align="center">
+  <img alt="Light" src="screenshots/Screen Shot 2023-02-08 at 12.14.49 PM.png" width="45%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="Dark" src="screenshots/Screen Shot 2023-02-08 at 12.17.39 PM.png" width="45%">
+</p>
+<p align="center">
+  <img alt="Light" src="screenshots/Screen Shot 2023-02-08 at 12.20.45 PM.png" width="45%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="Dark" src="screenshots/Screen Shot 2023-02-08 at 12.25.31 PM.png" width="45%">
+</p>
+
 # How to run
 - Visit https://openai.com/ > API > Login > email: [yahoo.ca] | password: [simplepassword] > Click on your profile icon > View API keys > Create new secret key <br />
 - Paste this in the empty string in .env file located in the server folder. <br />
