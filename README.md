@@ -7,6 +7,18 @@ Implementation of ChatGPT3: SmartChat using OpenAI's API. Information is sent an
 # How to run
 - Visit https://openai.com/ > API > Login > email: [yahoo.ca] | password: [simplepassword] > Click on your profile icon > View API keys > Create new secret key <br />
 - Paste this in the empty string in .env file located in the server folder. <br />
+- Below show setup process for creating this project - no need to execute it to run this app
+```md
+[need to have node installed]
+> node -v 
+[Below line is for setting a vanilla client project]
+> npm create vite@latest client --template vanilla 
+[>> type 'y' & enter >> enter (for Vanilla) >> enter (for JavaScript)]
+[setting up server side, create an empty folder called server and navigate into it]
+> npm init -y
+> npm install cors dotenv express nodemon openai
+[create a new file called server.js]
+```
 - Run Server: Open a terminal and navigate to where the project is cloned/downloaded
 ```md
 > cd ChatGPT3-SmartChat/server
@@ -31,7 +43,7 @@ Implementation of ChatGPT3: SmartChat using OpenAI's API. Information is sent an
   - Handling the following API response
 - Setup a Vanilla JS project using Vite
 - Use jQuery to handle form submission
-- Use Node.js for server side
+- Use Node.js with express framework for server side
 - Responsive layout with CSS
 - Handle events with JavaScript
 - Render markdown from string
