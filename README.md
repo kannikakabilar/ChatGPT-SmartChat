@@ -1,6 +1,9 @@
 # ChatGPT3-SmartChat
 Implementation of ChatGPT3: SmartChat using OpenAI's API. Information is sent and received using functions implemented in JavaScript with Node and Express used for backend and Vanilla used for frontend.
 
+- The server communicates with the advanced GPT3 model API
+- Elegant User Interface that enhances the ChatGPT app
+
 # How to run
 - Visit https://openai.com/ > API > Login > email: [yahoo.ca] | password: [simplepassword] > Click on your profile icon > View API keys > Create new secret key <br />
 - Paste this in the empty string in .env file located in the server folder. <br />
@@ -23,5 +26,27 @@ Implementation of ChatGPT3: SmartChat using OpenAI's API. Information is sent an
 ```
 
 # Concepts Learned
+- Knowledge of utilizing any API from OpenAI
+  - Make API requests
+  - Handling the following API response
+- Setup a Vanilla JS project using Vite
+- Use jQuery to handle form submission
+- Use Node.js for server side
+- Responsive layout with CSS
+- Handle events with JavaScript
+- Render markdown from string
 
 # File Structure
+- client side handles front-end: handling form submission, displaying message, and webpage layout
+  - assets folder contains images and the public folder contains the .ico file
+  - node_modules folder contains installed packages for the client-side
+  - package*.json files indicate which files need to be installed for client
+  - index.html contains the basic layout of the webpage
+  - script.js contains functions that will be executed once when the user sends a message 
+  - style.css contains design of the main index.html page
+  
+- server side handles back-end: communication with API
+  - node_modules folder contains installed packages for the server-side
+  - package*.json files indicate which files need to be installed for server
+  - server.js contains functions that communicates with the API
+  - .env contains API key
