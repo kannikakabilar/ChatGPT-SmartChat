@@ -1,11 +1,13 @@
 import bot from './assets/bot.svg';
 import user from './assets/user.svg';
 
+// querySelect, #element_name, ${..code..} are all part of jQuery
 const form = document.querySelector('form');
 const chatContainer = document.querySelector('#chat_container');
 
 let loadInterval;
 
+// The three dots that appear while the AI generates a response
 function loader(element){
   element.textContent = '';
 
@@ -19,6 +21,7 @@ function loader(element){
 
 }
 
+// Instead of displaying the text right away, this function will type out each char 1-by-1
 function typeText(element, text) {
   let index = 0;
 
@@ -32,6 +35,7 @@ function typeText(element, text) {
   }, 20)
 }
 
+// A unique ID is generated using timestamp and Math.random() so that each message can be uniquely tracked
 function generateUniqueId(){
   const timestamp = Date.now();
   const randomNumber = Math.random();
@@ -41,6 +45,7 @@ function generateUniqueId(){
 
 }
 
+// AI's message will be displayed in a faded-white stripe
 function chatStripe (isAi, value, uniqueId) {
   return (
     `
@@ -59,6 +64,7 @@ function chatStripe (isAi, value, uniqueId) {
   )
 }
 
+// function is called when the user submits a message
 const handleSubmit = async (e) => {
   e.preventDefault();
 
@@ -86,8 +92,11 @@ const handleSubmit = async (e) => {
     })
   })
 
+  // Clear the 3 dots from div tag where AI's message will be displayed
   clearInterval(loadInterval);
   messageDiv.innerHTML='';
+
+  // if the response is succesfully received display the AI's response else display error
   if(response.ok){
     const data = await response.json();
     const parsedData = data.bot.trim();
@@ -100,6 +109,7 @@ const handleSubmit = async (e) => {
   }
 }
 
+// users can press submit or hit enter to submit their message
 form.addEventListener('submit', handleSubmit);
 form.addEventListener('keyup', (e) => {
   if (e.keyCode === 13) {
