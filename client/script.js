@@ -1,4 +1,4 @@
-import bot from './assets/bot.svg';
+import bot from './assets/ai.png';
 import user from './assets/user.svg';
 
 // querySelect, #element_name, ${..code..} are all part of jQuery
