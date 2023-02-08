@@ -1,5 +1,5 @@
-# ChatGPT3-SmartChat
-Implementation of ChatGPT3: SmartChat using OpenAI's API. Information is sent and received using functions implemented in JavaScript with Node and Express used for backend and Vanilla used for frontend.
+# ChatGPT3: SmartChat
+Implementation of ChatGPT3: SmartChat using OpenAI's API. Information is sent and received using functions implemented in JavaScript with Node and Express frameworks used for backend and Vanilla framework used for frontend.
 
 - The server communicates with the advanced GPT3 model API
 - Elegant User Interface that enhances the ChatGPT app
@@ -7,18 +7,6 @@ Implementation of ChatGPT3: SmartChat using OpenAI's API. Information is sent an
 # How to run
 - Visit https://openai.com/ > API > Login > email: [yahoo.ca] | password: [simplepassword] > Click on your profile icon > View API keys > Create new secret key <br />
 - Paste this in the empty string in .env file located in the server folder. <br />
-- Below show setup process for creating this project - no need to execute it to run this app
-```md
-[need to have node installed]
-> node -v 
-[Below line is for setting a vanilla client project]
-> npm create vite@latest client --template vanilla 
-[>> type 'y' & enter >> enter (for Vanilla) >> enter (for JavaScript)]
-[setting up server side, create an empty folder called server and navigate into it]
-> npm init -y
-> npm install cors dotenv express nodemon openai
-[create a new file called server.js]
-```
 - Run Server: Open a terminal and navigate to where the project is cloned/downloaded
 ```md
 > cd ChatGPT3-SmartChat/server
@@ -35,6 +23,18 @@ Implementation of ChatGPT3: SmartChat using OpenAI's API. Information is sent an
 ```md
 > lsof -ti:5001 | xargs kill -9
 > lsof -ti:5173 | xargs kill -9
+```
+- Below show setup process for creating this project - no need to execute it to run this app
+```md
+[need to have node installed]
+> node -v 
+[Below line is for setting a vanilla client project]
+> npm create vite@latest client --template vanilla 
+[>> type 'y' & enter >> enter (for Vanilla) >> enter (for JavaScript)]
+[setting up server side, create an empty folder called server and navigate into it]
+> npm init -y
+> npm install cors dotenv express nodemon openai
+[create a new file called server.js]
 ```
 
 # Concepts Learned
