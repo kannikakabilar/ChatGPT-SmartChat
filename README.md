@@ -1,5 +1,5 @@
 # ChatGPT3: SmartChat
-Implementation of ChatGPT3: SmartChat using OpenAI's API. Information is sent and received using functions implemented in JavaScript with Node and Express frameworks used for backend and Vanilla framework used for frontend.
+Implementation of ChatGPT3: SmartChat using OpenAI's API. Information is sent and received using functions implemented in JavaScript with Node and Express frameworks used for backend and Vanilla framework used for frontend. 
 
 - The server communicates with the advanced GPT3 model API
 - Elegant User Interface that enhances the ChatGPT app
