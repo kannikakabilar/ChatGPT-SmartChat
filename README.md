@@ -1,11 +1,11 @@
-# ChatGPT3: SmartChat
-Implementation of ChatGPT3: SmartChat using OpenAI's API. Information is sent and received using functions implemented in JavaScript with Node and Express frameworks used for backend and Vanilla framework used for frontend. 
+# ChatGPT: SmartChat
+Implementation of ChatGPT: SmartChat using OpenAI's API. Information is sent and received using functions implemented in JavaScript with Node and Express frameworks used for backend and Vanilla framework used for frontend. 
 
-- The server communicates with the advanced GPT3 model API
+- The server communicates with the advanced ChatGPT model API
 - Elegant User Interface that enhances the ChatGPT app
 - server.js can be modified to chat with any of OpenAI's trained models with a wide range of frequencies
 
-![Quote](https://github.com/kannikakabilar/ChatGPT3-SmartChat/blob/main/screenshots/Screen%20Shot%202023-02-08%20at%2012.06.10%20PM.png)
+![Quote](https://github.com/kannikakabilar/ChatGPT-SmartChat/blob/main/screenshots/Screen%20Shot%202023-02-08%20at%2012.06.10%20PM.png)
 <p align="center">
   <img alt="Light" src="screenshots/Screen Shot 2023-02-08 at 12.14.49 PM.png" width="45%">
 &nbsp; &nbsp; &nbsp; &nbsp;
@@ -22,13 +22,13 @@ Implementation of ChatGPT3: SmartChat using OpenAI's API. Information is sent an
 - Paste this in the empty string in .env file located in the server folder. <br />
 - Run Server: Open a terminal and navigate to where the project is cloned/downloaded
 ```md
-> cd ChatGPT3-SmartChat/server
+> cd ChatGPT-SmartChat/server
 > npm install
 > npm start
 ```
 - Run Client: Open another terminal and navigate to where the project is cloned/downloaded
 ```md
-> cd ChatGPT3-SmartChat/client
+> cd ChatGPT-SmartChat/client
 > npm install
 > npm run dev
 ```
