@@ -23,13 +23,13 @@ Implementation of ChatGPT: SmartChat using OpenAI's API. Information is sent and
 - Run Server: Open a terminal and navigate to where the project is cloned/downloaded
 ```md
 > cd ChatGPT-SmartChat/server
-> npm install
+> npm install --legacy-peer-deps
 > npm start
 ```
 - Run Client: Open another terminal and navigate to where the project is cloned/downloaded
 ```md
 > cd ChatGPT-SmartChat/client
-> npm install
+> npm install --legacy-peer-deps
 > npm run dev
 ```
 - If address 5001 (for server-side) or 5173 (for client-side, which may vary - look at output in terminal to see which port# is used) is already in use, you can just kill which ever process is using the port with below command, and run again
